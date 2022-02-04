@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @joe-py7840
 - 👀 I’m interested in programming using Python, html and css
-- 🌱 I’m currently learning web development using flask framework
+- 🌱 I’m currently learning web development using php
 - 📫 Contact me on telegram @dr joe, instagram @dr_kenyatta and twitter @the_hacker254
 
 <!---
