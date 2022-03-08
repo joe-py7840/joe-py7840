@@ -83,7 +83,7 @@
     </ul>
     <h2>What you'll learn:</h2>
     <ul>
-        <li>In depth learning of Open Computer Vision in python</li>
+        <li>In depth learning of Open Source Computer Vision in python</li>
 
         <li>Tests to examine what you've learnt</li>
     </ul>

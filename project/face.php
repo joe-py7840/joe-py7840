@@ -126,6 +126,38 @@ faces = face_cascade.detecMultiSCale(gray, 1.1, 4)
 for (x, y, w, h) in faces:
     cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
 </pre>
+<p>The full code will be like this:</p>
+<pre>
+import cv2
 
+image =cv2.imread("barack.webp")
+face_cascade = cv2.CascadeClassifier("cascade.xml")
+resized = cv2.resize(image,(700,700))
+gray = cv2.cvtColor(resized, cv2.COLOR_BGR2GRAY)
+faces = face_cascade.detectMultiple(gray, 1.1, 4)
+for (x, y, w, h) in faces:
+    cv2.rectangle(resized, (x, y), (x+w, y+h), (255, 0, 0), 2)
+cv2.imshow('Barack', resized)
+cv2.waitKey()
+
+</pre>
+
+<p>Up to now we have been dealing with static images. <br>     
+Now let's look at live videos.</p>
+<p>The following code will open our front camera</p>
+<pre>
+import cv2
+
+cap = cv2.VideoCapture(0)
+
+while True:
+    _, frame = cap.read()
+    cv2.imshow("Live Video", frame)
+    if cv2.waitKey(1) == ord('q'):
+        break
+
+cap.release()
+cv2.destroyAllWindows()
+</pre>
 </body>
 </html>
